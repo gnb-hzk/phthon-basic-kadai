@@ -1,13 +1,14 @@
 var = int(input("整数を入力してください"))
 
-if var % 3 == 0:
-    var = "Fizz"
-    
-elif var % 5 == 0:
-    var = "Buzz"
-    
-elif var % 3 == 0 and var % 5 == 0:
+if var % 3 == 0 and var % 5 == 0:
     var = "FizzBuzz"
-    
+    print(var)
+elif var % 3 == 0:
+    var = "Buzz"
+    print(var)
+elif var % 5 == 0:
+    var = "Fizz"
+    print(var)
 else:
     print(var)
+
